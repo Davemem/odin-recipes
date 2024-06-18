@@ -1,0 +1,1 @@
+I assume the intention of this assigment is to understand how to build a very basic HTML web site from scratch
