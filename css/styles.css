@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background, .wrapper {
+    background: linear-gradient(30deg, #ff00cc, #333399) !important; /* Previous color scheme */
+    animation: underwaterAnimation 10s ease-in-out infinite;
+    animation-iteration-count: infinite;
+    z-index: -1;
+    width: 200%; /* Make the background wider for smooth animation */
+    height: 200%; /* Make the background taller for smooth animation */
+}
+
+.background {
+    position: fixed;
+}
+
+@keyframes underwaterAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left:100px;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 5px 10px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+    font-size: 50px;
+}
+
+.Main-Container {
+    height: 90%;
+    display: flex;
+    flex: 1 1 auto;
+    border: solid blue 5px;
+    /* justify-content: space-between;
+    flex-direction: column; */
+    flex-flow:row wrap;
+}
+
+.nav {
+    padding: 10px;
+    border: solid green 1px;
+    flex-basis: 100px;
+}
+
+.content {
+    border: solid red 2px;
+    margin-bottom: auto;
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.recipe {
+    color: #00ffff; /* Neon Cyan text */
+    font-size: 25px;
+    flex-basis: 2000px;
+    align-self: center; 
+}
+
+.secondary-content {
+    align-self: center;
+    border: solid brown 2px;
+    flex-basis: 600px;
+    flex-shrink: 5;
+}
+
+footer {
+    text-align: center;
+    color: maroon;
+    border: solid orange 1px;
+    margin-top: auto;
+    align-self: flex-end;
+}

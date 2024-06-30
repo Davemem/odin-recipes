@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipe Home Page</title>
+    <title>Dave's Recipe Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1><Strong>Odin Recipes</Strong></h1>
-    <ul>
-        <li><a href="./recipes/lasagne.html" target="_blank" rel="nopoener noreferrer"><em>Tasty Lasagne Recipe</em></a></li>
-        <li><a href="./recipes/risotto.html" target="_blank" rel="noopener noreferrer"><em>Tasy Risotto Recipe</em></a></li>
-        <li><a href="./recipes/steak.html" target="_blank" rel="noopener noreferrer">Tasty Steak Recipe</a></li>
-    
-    </ul>
-        
+<body class="main">
+    <div class="background"></div>
+    <header class="header">
+        <h1><strong>Cooking Journal</strong></h1>
+        <form class="search-bar">
+            <label for="search-text">Search</label>
+            <input type="text" id="search-text">
+            <input type="submit" value="Send">
+        </form>
+    </header>
+    <div class="Main-Container">
+        <div class="nav">
+            <ul>
+                <li><a href="./about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div><a class="recipe" href="./recipes/lasagne.html" target="_blank" rel="noopener noreferrer"><em>Lasagne</em></a></div>
+            <div><a class="recipe" href="./recipes/risotto.html" target="_blank" rel="noopener noreferrer"><em>Risotto</em></a></div>
+            <div><a class="recipe" href="./recipes/steak.html" target="_blank" rel="noopener noreferrer">Steak</a></div>
+        </div>
+        <div class="secondary-content"><p>Space for some more information</p></div>
+        <div class="tertiary-content"></div>
+    </div>
+    <footer class="footer"><p>Spicy Contracting</p></footer>   
 </body>
 </html>
